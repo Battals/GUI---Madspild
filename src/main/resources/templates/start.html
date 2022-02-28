@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stop Madspild</title>
+</head>
+    <style>
+        .container{
+            position: relative;
+        }
+        .box1{
+            position: absolute;
+            top: 55%;
+            left: 25%;
+            margin-top:-50px;
+            margin-left:-100px;
+            background-color: aqua;
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            pointer-events: auto;
+        }
+        .box2{
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            margin-top:-50px;
+            margin-left:-100px;
+            background-color: darkred;
+            height: 250px;
+            width: 250px;
+            text-align: center;
+        }
+        .box3{
+            position: absolute;
+            top: 55%;
+            left: 75%;
+            margin-top:-50px;
+            margin-left:-100px;
+            background-color: cornflowerblue;
+            height: 250px;
+            width: 250px;
+            text-align: center;
+        }
+        .img{
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+        }
+        .title{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 150px;
+            font-weight: bold;
+        }
+        .info-box{
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+            font-weight: bold;
+            background-color: yellowgreen;
+        }
+        .top-image{
+            width: 50%;
+            height: 50%;
+            padding: 25px;
+            display: block;
+
+        }
+        .top-text{
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+        }
+
+    </style>
+    <style>A {text-decoration: none;}</style>
+<body>
+<div class="container">
+    <img class="img" src="foodwaste3.jpeg">
+    <div class="title"> Stop madspild </div>
+    <div class="info-box"> Madspild er en af de førende problemer i vores samfund </div>
+
+    <a href="http://localhost:8080/info">
+    <div class="box1">
+        <img class="top-image" style="margin: auto" src="icon.png">
+        <div class="top-text"> Info </div>
+    </div>
+    </a>
+
+    <a href="http://localhost:8080/konsekvens">
+    <div class="box2">
+        <img class="top-image" style="margin: auto" src="foodwaste.png">
+        <div class="top-text"> Konsekvenser </div>
+    </div>
+    </a>
+
+    <a href="http://localhost:8080/loesning">
+    <div class="box3">
+        <img class="top-image" style="margin: auto" src="greenearth.png">
+        <div class="top-text"> Løsninger </div>
+    </div>
+    </a>
+</div>
+
+</body>
+</html>
