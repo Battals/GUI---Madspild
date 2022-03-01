@@ -5,94 +5,86 @@
     <title>Løsninger på madspild</title>
 </head>
 <style>
-    .top-box{
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+    }
+
+    li a {
         display: block;
-        border-bottom-style: solid;
-        border-width: 1px;
-        border-color: grey;
-        text-align: center;
-        background-color: #c5ffba;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
     }
-    .title-box{
-        display: none;
-        text-align: center;
+
+    /* Change the link color on hover */
+    li a:hover {
+        background-color: #555;
+        color: white;
     }
-    .head-title{
-        color: #498d3c;
-        font-size: 50px;
-        font-weight: bold;
-        color: black;
-    }
-    .background-page{
-        background-color: #e5fde1;
-        width: auto;
-        height: auto;
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-    .background{
-        display: block;
-        margin-top: 0px;
-        margin-left: 150px;
-        margin-right: 150px;
-        border-left-style: solid;
-        border-right-style: solid;
-        border-left-color: #547352;
-        border-right-color: #547352;
-        border-width: 2px;
-        padding-bottom: 70%;
-        background-color: #d8fdd3;
-        opacity: 85%;
-        height: 1300px;
-    }
-    .title-top{
-        font-size: 50px;
-        font-weight: bold;
-        padding-left: 35px;
-        font-family: sans-serif;
-    }
-    .title{
-        font-size: 48px;
-        font-weight: bold;
-        color: black;
-        padding: 35px;
-    }
-    .solution-text{
-        background-color: #b3d3b0;;
-        font-size: 24px;
-        color: black;
-        padding-left: 35px;
-        width: auto;
+
+    .title-text {
+        position: absolute;
+        width: fit-content;
         height: fit-content;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: Arial;
+        border-radius: 25px;
+        background: #498d3c;
+        padding: 5px;
+        text-align: center;
     }
+
+    .info-text {
+        position: absolute;
+        width: 60%;
+        height: fit-content;
+        top: 20%;
+        left: 20%;
+        font-family: Arial;
+        border-radius: 25px;
+        background: #498d3c;
+        padding: 5px;
+    }
+
+    .info-text-title{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .info-image{
+        width: 30%;
+        max-width: 100%;
+        display: block;
+    }
+
 </style>
-<body>
-<div class="top-box">
-    <span class="head-title">Danmark mod Madspild</span>
-</div>
-<div class="background-page">
-<div class="background">
-    <span class="title-top" style="position: center"> X Løsninger der kunne hjælpe med at reducere madspild</span>
-    <p></p>
-    <span class="title">1.Indsæt emne her</span>
-    <p>
-        <span class="solution-text">Informationer om emne</span>
-    </p>
-    <span class="title">2.Indsæt emne her</span>
-    <p>
-        <span class="solution-text">Informationer om emne</span>
-    </p>
-    <span class="title">3.Indsæt emne her</span>
-    <p>
-        <span class="solution-text">Informationer om emne</span>
-    </p>
-
-
+<body style="background-color: cornsilk">
+<div class="">
+    <div class="title-text">
+        <p style="font-size: 26px; font-weight: bold;"> Løsninger på madspild </p>
     </div>
+    <div class="info-text">
+        <p class="info-text-title"> 1. Vær smart når du køber ind </p>
+        <p>•Skriv nogle informationer ind her.</p>
+        <p class="info-text-title"> 2. Opbevar din mad rigtigt </p>
+        <p>•Skriv nogle informationer ind her.</p>
+        <p class="info-text-title"> 3. Ikke være kræsen </p>
+        <p>•Skriv nogle informationer ind her.</p>
+        <p class="info-text-title"> 4. Ik smid mad ud med mindre det for gammelt </p>
+        <p>•Skriv nogle informationer ind her.</p>
+    </div>
+    <ul>
+        <li><a href="http://localhost:8080">Forside</a></li>
+        <li><a href="http://localhost:8080/info">Info</a></li>
+        <li><a href="http://localhost:8080/konsekvens">Konsekvenser</a></li>
+        <li><a href="http://localhost:8080/loesning">Løsninger</a></li>
+    </ul>
 </div>
-</div>
-
 </body>
 </html>
