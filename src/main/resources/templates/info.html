@@ -5,25 +5,54 @@
     <title>Info om madspild</title>
     <style>
 
-        .info-text{
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
 
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color on hover */
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .info-text{
             position: absolute;
             width: 45%;
             height: fit-content;
             top: 20%;
             left: 20%;
             font-family: Arial;
+            border-radius: 25px;
+            background: #498d3c;
+            padding: 5px;
         }
 
     </style>
 </head>
 <body>
+<div class="">
 <div class="info-text">
     <p>•Madspildet i den danske servicesektor udgør 227.000-ton pr. år. Til sammenligning er det samlede madspild fra husholdningerne 261.000-ton pr. år.</p>
-
     <p>•Det største madspild i servicesektoren stammer fra detailhandelen, der spilder 163.000 tons pr. år, svarende til 72 % af servicesektorens madspild.</p>
-
     <p>•Af detailhandelens madspild står specialforretninger som slagtere, fiskeforretninger og grønthandlere for 12.000 tons pr. år, mens ikke-specialiserede forretninger som kiosker, købmænd, supermarkeder og varehuse står for 151.000-ton pr. år.</p>
+</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
 </div>
 
 </body>
