@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bekmæp madspild!</title>
+    <title>Bekæmp madspild!</title>
 
     <style> /* .o */
     .box1 {
@@ -71,92 +71,107 @@
         padding: 25px;
         display: block;
     }
-        .box1{
-            position: absolute;
-            top: 50%;
-            left: 25%;
-            margin-top:-50px;
-            margin-left: 25px;
-            background-color: #498d3c;
-            height: 180px;
-            width: 180px;
-            text-align: center;
-            pointer-events: auto;
-            border-radius: 30px;
-        }
-        .box1:hover{
-            background-color: #719168;
-        }
-        .box1:active{
-            background-color: grey;
-        }
-        .box2{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-top:-50px;
-            margin-left:-100px;
-            background-color: darkred;
-            height: 180px;
-            width: 180px;
-            text-align: center;
-            border-radius: 30px;
-        }
-        .box2:hover{
-            background-color: #961b1b;
-        }
-        .box2:active{
-            background-color: grey;
-        }
 
-        .box3{
-            position: absolute;
-            top: 50%;
-            left: 75%;
-            margin-top:-50px;
-            margin-left: -230px;
-            background-color: cornflowerblue;
-            height: 180px;
-            width: 180px;
-            text-align: center;
-            border-radius: 30px;
-        }
+    .box1 {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        margin-top: -50px;
+        margin-left: 25px;
+        background-color: #498d3c;
+        height: 180px;
+        width: 180px;
+        text-align: center;
+        pointer-events: auto;
+        border-radius: 30px;
+    }
 
-        .box3:hover{
-            background-color: #546980;
-        }
-        .box3:active{
-            background-color: grey;
-        }
+    .box1:hover {
+        background-color: #719168;
+    }
 
-        .img{
-            width: 100%;
-            height: auto;
-            opacity: 0.5;
-        }
-        .title{
-            position: absolute;
-            top: 5%;
-            left: 45%;
-            transform: translate(-20%, -15%);
-            font-size: 50px;
-            font-weight: normal;
-        }
-        .info-box{
-            position: absolute;
-            top: 7%;
-            left: 7%;
-            transform: translate(-40%, -35%);
-            font-size: 20px;
-            font-weight: bold;
-            text-emphasis-color: #498d3c;
-        }
-        .top-image{
-            width: 50%;
-            height: 50%;
-            padding: 25px;
-            display: block;
+    .box1:active {
+        background-color: grey;
+    }
 
+    .box2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -100px;
+        background-color: darkred;
+        height: 180px;
+        width: 180px;
+        text-align: center;
+        border-radius: 30px;
+    }
+
+    .box2:hover {
+        background-color: #961b1b;
+    }
+
+    .box2:active {
+        background-color: grey;
+    }
+
+    .box3 {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        margin-top: -50px;
+        margin-left: -230px;
+        background-color: cornflowerblue;
+        height: 180px;
+        width: 180px;
+        text-align: center;
+        border-radius: 30px;
+    }
+
+    .box3:hover {
+        background-color: #546980;
+    }
+
+    .box3:active {
+        background-color: grey;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+    }
+
+    .title {
+        position: absolute;
+        top: 5%;
+        left: 45%;
+        transform: translate(-20%, -15%);
+        font-size: 50px;
+        font-weight: normal;
+    }
+
+    .info-box {
+        position: absolute;
+        top: 7%;
+        left: 7%;
+        transform: translate(-40%, -35%);
+        font-size: 20px;
+        font-weight: bold;
+        text-emphasis-color: #498d3c;
+    }
+
+    .top-image {
+        width: 50%;
+        height: 50%;
+        padding: 25px;
+        display: block;
+    }
+
+    .top-box {
+        width: 100%;
+        height: 90px;
+        border-bottom: solid;
     }
 
     .top-text {
@@ -165,17 +180,29 @@
         color: black;
     }
 
+    #topcorner{
+        position: absolute;
+        width: 25%;
+        height: 25%;
+        top: -7%;
+        right: 1%;
+        transform: translate(20%,5%);
+    }
+
     </style>
 </head>
-    <style> {
-    text-decoration: none;
+<style> {
+    text-decoration: none
+;
 }   </style>
 <body style="background-color: cornsilk">
-<div class="container">
-    <div>
+<div class="top-box">
+    <div class="top-box">
+        <img src="KampenModMadspild.png" id="topcorner">
         <div class="title"> Bekæmp madspild</div>
         <div style="color: #498d3c" class="info-box"> Danmark mod Madspil</div>
     </div>
+
     <a href="http://localhost:8080/info">
         <div class="box1">
             <img class="top-image" style="margin: auto" src="icon.png">
