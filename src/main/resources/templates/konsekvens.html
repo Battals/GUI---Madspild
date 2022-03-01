@@ -2,9 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Madspild: Konsekvenser</title>
 </head>
-<body>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+    }
 
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color on hover */
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    .title-text {
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: Arial;
+        border-radius: 25px;
+        background: #bb3b3f;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .info-text {
+        position: absolute;
+        width: 60%;
+        height: fit-content;
+        top: 20%;
+        left: 20%;
+        font-family: Arial;
+        border-radius: 25px;
+        background: #bb3b3f;
+        padding: 5px;
+    }
+
+    .info-text-title{
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .info-image{
+        width: 30%;
+        max-width: 100%;
+        display: block;
+    }
+
+</style>
+<body style="background-color: cornsilk">
+<div class="">
+    <div class="title-text">
+        <p style="font-size: 26px; font-weight: bold;">Konsekvenser af madspild </p>
+    </div>
+    <div class="info-text">
+        <p class="info-text-title"> 1. Miljø </p>
+        <p>• Madspild står ifølge FN for 8 til 10 % af al verdens CO2-udledning. Ubrugte madvarer er skyld i 3,3 milliarder ton CO2-udledning hvert år.
+            Hvis man sammenligner den CO2-udledning, som madspild er skyld i, vil det kun være USA og Kina, der udleder mere.</p>
+        <p class="info-text-title"> 2. Økonomi </p>
+        <p>• Madspild har en samlet værdi på over 7,92 billioner kr årligt.</p>
+        <p class="info-text-title"> 3. Samfund </p>
+        <p>• Madspild er et særligt forfærdeligt problem, når man tænker på, at 870 millioner mennesker verden over lever i sult.
+            Det svarer til to og en halv gange befolkningen i USA.</p>
+        <p class="info-text-title"> 4. Ressourcer </p>
+        <p>• Hvis maden kommer så langt som til forbrugeren, men alligevel ender med at blive smidt ud, er der spildt et hav af ressourcer.
+            Det kan være energi, vand, sprøjtemidler, brændstof og andre ressourcer, der er brugt på at producere og transportere mad, som ingen spiser.</p>
+    </div>
+    <ul>
+        <li><a href="http://localhost:8080">Forside</a></li>
+        <li><a href="http://localhost:8080/info">Info</a></li>
+        <li><a href="http://localhost:8080/konsekvens">Konsekvenser</a></li>
+        <li><a href="http://localhost:8080/loesning">Løsninger</a></li>
+    </ul>
+</div>
 </body>
 </html>
