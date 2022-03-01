@@ -5,71 +5,12 @@
     <title>Bekæmp madspild!</title>
 
     <style> /* .o */
-    .box1 {
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        margin-top: -50px;
-        margin-left: 25px;
-        background-color: #498d3c;
-        height: 180px;
-        width: 180px;
-        text-align: center;
-        pointer-events: auto;
-        border-radius: 30px;
-        float: left;
-    }
-
-    .box2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -50px;
-        margin-left: -100px;
-        background-color: darkred;
-        height: 180px;
-        width: 180px;
-        text-align: center;
-        border-radius: 30px;
-    }
-
-    .box3 {
-        position: absolute;
-        top: 50%;
-        left: 75%;
-        margin-top: -50px;
-        margin-left: -230px;
-        background-color: cornflowerblue;
-        height: 180px;
-        width: 180px;
-        text-align: center;
-        border-radius: 30px;
-    }
-
     .title {
-        position: absolute;
-        top: 5%;
-        left: 45%;
-        transform: translate(-20%, -15%);
+        position: center;
+        text-align: center;
         font-size: 50px;
-        font-weight: normal;
-    }
-
-    .info-box {
-        position: absolute;
-        top: 7%;
-        left: 7%;
-        transform: translate(-40%, -35%);
-        font-size: 20px;
         font-weight: bold;
-        text-emphasis-color: #498d3c;
-    }
-
-    .top-image {
-        width: 50%;
-        height: 50%;
-        padding: 25px;
-        display: block;
+        font-family: Poppins, sans-serif;
     }
 
     .box1 {
@@ -78,7 +19,7 @@
         left: 25%;
         margin-top: -50px;
         margin-left: 25px;
-        background-color: #498d3c;
+        background-color: #6B8E23;
         height: 180px;
         width: 180px;
         text-align: center;
@@ -87,7 +28,7 @@
     }
 
     .box1:hover {
-        background-color: #719168;
+        opacity: 0.5;
     }
 
     .box1:active {
@@ -100,7 +41,7 @@
         left: 50%;
         margin-top: -50px;
         margin-left: -100px;
-        background-color: darkred;
+        background-color: #6B8E23;
         height: 180px;
         width: 180px;
         text-align: center;
@@ -108,7 +49,7 @@
     }
 
     .box2:hover {
-        background-color: #961b1b;
+        opacity: 0.5;
     }
 
     .box2:active {
@@ -121,7 +62,7 @@
         left: 75%;
         margin-top: -50px;
         margin-left: -230px;
-        background-color: cornflowerblue;
+        background-color: #6B8E23;
         height: 180px;
         width: 180px;
         text-align: center;
@@ -129,36 +70,11 @@
     }
 
     .box3:hover {
-        background-color: #546980;
+        opacity: 0.5;
     }
 
     .box3:active {
         background-color: grey;
-    }
-
-    .img {
-        width: 100%;
-        height: auto;
-        opacity: 0.5;
-    }
-
-    .title {
-        position: absolute;
-        top: 5%;
-        left: 45%;
-        transform: translate(-20%, -15%);
-        font-size: 50px;
-        font-weight: normal;
-    }
-
-    .info-box {
-        position: absolute;
-        top: 7%;
-        left: 7%;
-        transform: translate(-40%, -35%);
-        font-size: 20px;
-        font-weight: bold;
-        text-emphasis-color: #498d3c;
     }
 
     .top-image {
@@ -180,50 +96,55 @@
         color: black;
     }
 
-    #topcorner{
-        position: absolute;
+    #top-corner {
+        position: fixed;
         width: 25%;
         height: 25%;
-        top: -7%;
-        right: 1%;
-        transform: translate(20%,5%);
+        top: -5%;
+        right: -5%;
+    }
+
+    #top-corner1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 15%;
+        height: 15%;
     }
 
     </style>
 </head>
-<style> {
-    text-decoration: none
-;
-}   </style>
+
 <body style="background-color: cornsilk">
+
 <div class="top-box">
-    <div class="top-box">
-        <img src="KampenModMadspild.png" id="topcorner">
-        <div class="title"> Bekæmp madspild</div>
-        <div style="color: #498d3c" class="info-box"> Danmark mod Madspil</div>
-    </div>
-
-    <a href="http://localhost:8080/info">
-        <div class="box1">
-            <img class="top-image" style="margin: auto" src="icon.png">
-            <div class="top-text"> Info</div>
-        </div>
-    </a>
-
-    <a href="http://localhost:8080/konsekvens">
-        <div class="box2">
-            <img class="top-image" style="margin: auto" src="foodwaste.png">
-            <div class="top-text"> Konsekvenser</div>
-        </div>
-    </a>
-
-    <a href="http://localhost:8080/loesning">
-        <div class="box3">
-            <img class="top-image" style="margin: auto" src="greenearth.png">
-            <div class="top-text"> Løsninger</div>
-        </div>
-    </a>
+    <img src="Logo.png" id="top-corner1" alt="Photo">
+    <img src="KampenModMadspild.png" id="top-corner" alt="Photo">
+    <h1 class="title"> Bekæmp madspild</h1>
 </div>
+
+
+<a href="http://localhost:8080/info">
+    <div class="box1">
+        <img class="top-image" style="margin: auto" src="icon.png" alt="Photo">
+        <div class="top-text"> Info</div>
+    </div>
+</a>
+
+<a href="http://localhost:8080/konsekvens">
+    <div class="box2">
+        <img class="top-image" style="margin: auto" src="foodwaste.png" alt="Photo">
+        <div class="top-text"> Konsekvenser</div>
+    </div>
+</a>
+
+<a href="http://localhost:8080/loesning">
+    <div class="box3">
+        <img class="top-image" style="margin: auto" src="greenearth.png" alt="Photo">
+        <div class="top-text"> Løsninger</div>
+    </div>
+</a>
+
 
 </body>
 </html>
