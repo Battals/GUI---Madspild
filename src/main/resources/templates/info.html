@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             width: 200px;
-            background-color: #f1f1f1;
+            background-color: darkseagreen;
         }
 
         li a {
@@ -18,6 +18,7 @@
             color: #000;
             padding: 8px 16px;
             text-decoration: none;
+            font-family: Poppins, sans-serif;
         }
 
         /* Change the link color on hover */
@@ -26,30 +27,62 @@
             color: white;
         }
 
+        .title-text {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%);
+            font-family: Poppins, sans-serif;
+            border-radius: 25px;
+            background: darkseagreen;
+            padding: 5px;
+            text-align: center;
+        }
+
         .info-text {
             position: absolute;
-            width: 45%;
+            width: 60%;
             height: fit-content;
-            top: 20%;
+            top: 25%;
             left: 20%;
-            font-family: Arial;
+            font-family: Poppins, sans-serif;
             border-radius: 25px;
-            background: #498d3c;
+            background: darkseagreen;
             padding: 5px;
+        }
+
+        .info-text-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
         }
 
     </style>
 </head>
 <body style="background-color: cornsilk">
 <div class="">
+
+    <div class="title-text">
+        <h1>Info om madspild</h1>
+    </div>
     <div class="info-text">
-        <p>•Madspildet i den danske servicesektor udgør 227.000-ton pr. år. Til sammenligning er det samlede madspild
-            fra husholdningerne 261.000-ton pr. år.</p>
-        <p>•Det største madspild i servicesektoren stammer fra detailhandelen, der spilder 163.000 tons pr. år, svarende
-            til 72 % af servicesektorens madspild.</p>
-        <p>•Af detailhandelens madspild står specialforretninger som slagtere, fiskeforretninger og grønthandlere for
-            12.000 tons pr. år, mens ikke-specialiserede forretninger som kiosker, købmænd, supermarkeder og varehuse
-            står for 151.000-ton pr. år.</p>
+        <p class="info-text-title">Definition af madspild:</p>
+        <p>Madaffald er alt affald, der stammer fra mad. Madaffald kan opdeles i to: madspild og øvrigt madaffald.
+            Madspild er fødevarer, der kunne være spist, men i stedet er blevet smidt ud. Øvrigt madaffald er de dele
+            af fødevarer, der ikke er egnet til at spise. Eksempler på madspild er brød, hel frugt og grønt og middagsrester.
+            Eksempler på øvrigt madaffald er æggeskaller, osteskorper, kaffegrums og kernehuse.</p>
+        <p class="info-text-title">Madspild i Danmark:</p>
+        <p>Samlet smider vi i Danmark hvert år over 700.000 ton mad ud, som kunne være spist. Husholdningernes madspild
+            udgør 260.000 ton pr. år. I servicesektoren er der et årligt madspild på 227.000 ton, heraf 163.000 ton fra
+            detailhandlen, 29.000 ton fra hoteller og restauranter og 31.000 ton fra institutioner og storkøkkener om
+            året. Madspild fra primærproduktionen udgør 100.000 ton pr. år, mens fødevareindustrien står for et årligt
+            madspild på 133.000 ton.</p>
+        <p>Madspild koster danskerne 13,5 milliarder kroner om året inkl. moms og afgifter.</p>
+        <p>Hver dansker smider 47 kg spiselig mad ud om året. Samlet set udgør madspild 42 kg pr. person pr. år i
+            enfamilieboliger og 59 kg pr. person pr. år i etageboliger.</p>
+
     </div>
     <ul>
         <li><a href="http://localhost:8080">Forside</a></li>
