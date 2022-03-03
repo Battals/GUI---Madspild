@@ -7,19 +7,22 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class Controller {
 
     @GetMapping("")
-    public String start(){
+    public String start() {
         return "start";
     }
+
     @GetMapping("/info")
-    public String info(){
+    public String info() {
         return "info";
     }
+
     @GetMapping("/konsekvens")
-    public String konsekvens(){
+    public String konsekvens() {
         return "konsekvens";
     }
+
     @GetMapping("/loesning")
-    public String loesning(){
+    public String loesning() {
         return "loesning";
     }
 }
